@@ -14,6 +14,8 @@ jobs:
       - name: List files in Dir
         run: ls
       - name: Check Dotnet Cli
-        run: dotnet
+        run: dotnet build
+      - name: List files in Dir
+        run: ls TrickingLibrary.Api/ -R
       - name: Check Npm Cli
-        run: npm
+        run: npm -v
